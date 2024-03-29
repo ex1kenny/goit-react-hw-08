@@ -1,12 +1,13 @@
 .header {
   display: flex;
   justify-content: space-between;
+  border: 1px solid #ccc;
 }
 
 .left {
-  margin-right: auto; 
+  margin-right: auto;
 }
 
 .right {
-  margin-left: auto; 
+  margin-left: auto;
 }
