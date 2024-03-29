@@ -3,13 +3,14 @@ import {
   selectLoading,
   selectError,
 } from "../../redux/selectorsforApp";
-import NoContact from "../NoContact/NoContact";
+
+import NoContact from "../../components/NoContact/NoContact";
 import css from "./Contacts.module.css";
-import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import SearchBox from "../SearchBox/SearchBox";
-import ContactForm from "../ContactForm/ContactForm";
-import ContactList from "../ContactList/ContactList";
-import SpinLoader from "../SpinLoader/SpinLoader";
+import { ErrorMessage } from "formik";
+import SearchBox from "../../components/SearchBox/SearchBox";
+import ContactForm from "../../components/ContactForm/ContactForm";
+import ContactList from "../../components/ContactList/ContactList";
+import SpinLoader from "../../components/SpinLoader/SpinLoader";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { fetchContact } from "../../redux/contacts/contactsOps";

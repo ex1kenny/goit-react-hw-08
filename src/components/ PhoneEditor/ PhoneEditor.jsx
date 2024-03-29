@@ -1,7 +1,7 @@
 import { useState } from "react";
 import css from "./ PhoneEditor.module.css";
 import { useDispatch } from "react-redux";
-import { updateContact } from "../../redux/contactsOps.js";
+import { updateContact } from "../../redux/contacts/contactsOps.js";
 
 export default function PhoneEditor({ contactId, initialValue, onClose }) {
   const [text, setText] = useState(initialValue);

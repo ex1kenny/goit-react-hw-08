@@ -6,12 +6,11 @@ import { useId } from "react";
 import { loginIn } from "../../redux/auth/authOps";
 import { useState } from "react";
 
-
 export default function LoginForm() {
   const dispatch = useDispatch();
-  const handleSubmit = (value, action) => {
-    dispatch(loginIn(value));
-    action.resetForm();
+  const handleSubmit = (values, actions) => {
+    dispatch(loginIn(values));
+    actions.resetForm();
   };
 
   const pasId = useId();
@@ -19,8 +18,8 @@ export default function LoginForm() {
   const LogSchema = Yup.object().shape({
     email: Yup.string().email("Invalid email").required("Email is required"),
     password: Yup.string()
-      .min(6, " must be at least 6 characters")
-      .required(" is required"),
+      .min(6, "Password must be at least 6 characters")
+      .required("Password is required"),
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -68,12 +67,13 @@ export default function LoginForm() {
               name="password"
               id={pasId}
               className={css.field}
-              disabled={!showPassword}
             />
             <button
               type="button"
               onClick={toggleShowPassword}
-              className={css.toggleButton}
+              className={`${css.toggleButton} ${
+                showPassword ? css.show : css.hide
+              }`}
             >
               {showPassword ? "Hide" : "Show"}
             </button>

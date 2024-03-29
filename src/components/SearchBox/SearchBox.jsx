@@ -3,7 +3,7 @@ import { useId } from "react";
 import css from "./SearchBox.module.css";
 import { useDispatch } from "react-redux";
 import { useSelector } from "react-redux";
-import { changeName } from "../../redux/filterSlice";
+import { changeName } from "../../redux/filters/filterSlice";
 import { selectNameFilter } from "../../redux/selectorsforApp";
 
 export default function SearchBox() {

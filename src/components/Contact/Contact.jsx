@@ -3,7 +3,7 @@ import { useState } from "react";
 import css from "./Contact.module.css";
 import { FaUser } from "react-icons/fa";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import { deleteContact } from "../../redux/contactsOps.js";
+import { deleteContact } from "../../redux/contacts/contactsOps.js";
 import { useDispatch } from "react-redux";
 import Editor from "../Editor/Editor";
 import PhoneEditor from "../ PhoneEditor/ PhoneEditor";

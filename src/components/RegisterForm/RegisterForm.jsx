@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useId } from "react";
+import { useState } from "react";
 
 const LogSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
@@ -21,6 +22,12 @@ export default function RegisterForm() {
   const handleSubmit = (value, action) => {
     dispatch(register(value));
     action.resetForm();
+  };
+
+  const [showPassword, setShowPassword] = useState(false);
+
+  const toggleShowPassword = () => {
+    setShowPassword(!showPassword);
   };
 
   return (
@@ -48,12 +55,23 @@ export default function RegisterForm() {
           <label htmlFor={pasID} className={css.label}>
             Password
           </label>
-          <Field
-            type="password"
-            name="password"
-            id={pasID}
-            className={css.field}
-          />
+          <div className={css.passwordContainer}>
+            <Field
+              type={showPassword ? "text" : "password"}
+              name="password"
+              id={pasID}
+              className={css.field}
+            />
+            <button
+              type="button"
+              onClick={toggleShowPassword}
+              className={`${css.toggleButton} ${
+                showPassword ? css.show : css.hide
+              }`}
+            >
+              {showPassword ? "Hide" : "Show"}
+            </button>
+          </div>
           <ErrorMessage
             name="password"
             component="span"

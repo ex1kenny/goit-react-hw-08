@@ -28,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-top: 10px;
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -39,4 +39,14 @@
 
 .button:hover {
   background-color: #0056b3;
+}
+
+.show {
+  background-color: green;
+  color: white;
+}
+
+.hide {
+  background-color: red;
+  color: white;
 }

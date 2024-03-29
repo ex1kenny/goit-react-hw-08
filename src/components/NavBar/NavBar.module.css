@@ -4,9 +4,9 @@
 }
 
 .left {
-  margin-right: auto; /* Залишаємо AuthNavigation ліворуч */
+  margin-right: auto; 
 }
 
 .right {
-  margin-left: auto; /* Залишаємо LogoutMenu або RegistrationNav праворуч */
+  margin-left: auto; 
 }
