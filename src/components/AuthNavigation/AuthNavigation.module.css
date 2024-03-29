@@ -3,11 +3,12 @@
   align-items: center;
 }
 
+
 .link {
+  padding-bottom: 10px;
   margin-right: 10px;
   color: #333;
   text-decoration: none;
-  padding: 8px 16px;
 }
 
 .link:hover {
