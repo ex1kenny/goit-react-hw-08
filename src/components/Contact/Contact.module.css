@@ -1,0 +1,33 @@
+.container {
+  margin-bottom: 20px;
+}
+
+.list {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.item {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.item p {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.button {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.button:hover {
+  background-color: #ff333f;
+}

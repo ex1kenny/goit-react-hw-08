@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+}
+
+.navLink {
+  margin-right: 10px;
+  padding: 8px 16px;
+  color: #007bff;
+  text-decoration: none;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+.navLink:hover {
+  background-color: #007bff;
+  color: white;
+}

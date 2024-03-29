@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  margin-right: auto; /* Залишаємо AuthNavigation ліворуч */
+}
+
+.right {
+  margin-left: auto; /* Залишаємо LogoutMenu або RegistrationNav праворуч */
+}
