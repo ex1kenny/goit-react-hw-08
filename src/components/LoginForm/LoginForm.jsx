@@ -3,7 +3,8 @@ import { useDispatch } from "react-redux";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useId } from "react";
-import { loginIn } from "../../redux/auth/authOps";
+
+import { loginIn } from "../../redux/auth/operations";
 import { useState } from "react";
 
 export default function LoginForm() {

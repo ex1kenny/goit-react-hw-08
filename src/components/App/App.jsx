@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { lazy, useEffect } from "react";
 import { selectisRefreshing } from "../../redux/auth/slice";
-import { refreshUser } from "../../redux/auth/authOps";
+import { refreshUser } from "../../redux/auth/operations";
 import Layout from "../Layout/Layout";
 import { PrivateRoute } from "../PtivateRouter";
 import { RestrictedRoute } from "../RestrictedRouter";
