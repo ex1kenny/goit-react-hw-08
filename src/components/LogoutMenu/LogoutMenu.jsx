@@ -1,7 +1,7 @@
 import css from "./LogoutMenu.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { logOut } from "../../redux/auth/operations";
-import { selectUser } from "../../redux/auth/slice";
+import { selectUser } from "../../redux/auth/selectors";
 
 export default function LogoutMenu() {
   const dispatch = useDispatch();

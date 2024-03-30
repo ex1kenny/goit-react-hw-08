@@ -2,12 +2,12 @@ import css from "./App.module.css";
 import { Route, Routes } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { lazy, useEffect } from "react";
-import { selectisRefreshing } from "../../redux/auth/slice";
+import { selectisRefreshing } from "../../redux/auth/selectors";
 import { refreshUser } from "../../redux/auth/operations";
 import Layout from "../Layout/Layout";
 import { PrivateRoute } from "../PtivateRouter";
 import { RestrictedRoute } from "../RestrictedRouter";
-import { selectAuthLoading } from "../../redux/auth/slice";
+import { selectAuthLoading } from "../../redux/auth/selectors";
 import SpinLoader from "../SpinLoader/SpinLoader";
 
 const ContactsPage = lazy(() => import("../../pages/Contacts/Contacts"));

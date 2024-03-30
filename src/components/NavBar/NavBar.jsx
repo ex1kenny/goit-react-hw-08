@@ -1,6 +1,6 @@
 import css from "./NavBar.module.css";
 import { useSelector } from "react-redux";
-import { selectIsLoggedIn } from "../../redux/auth/slice";
+import { selectIsLoggedIn } from "../../redux/auth/selectors";
 import AuthNavigation from "../AuthNavigation/AuthNavigation";
 import LogoutMenu from "../LogoutMenu/LogoutMenu";
 import RegistrationNav from "../RegistrationNav/RegistrationNav";

@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectIsLoggedIn, selectisRefreshing } from "../redux/auth/slice";
+import { selectIsLoggedIn, selectisRefreshing } from "../redux/auth/selectors";
 
 /**
  * - If the route is private and the user is logged in, render the component

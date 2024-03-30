@@ -1,7 +1,7 @@
 import css from "./AuthNavigation.module.css";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { selectIsLoggedIn } from "../../redux/auth/slice";
+import { selectIsLoggedIn } from "../../redux/auth/selectors";
 
 export default function AuthNavigation() {
   const isLoggedIn = useSelector(selectIsLoggedIn);
